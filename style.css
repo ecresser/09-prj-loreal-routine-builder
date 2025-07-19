@@ -113,7 +113,7 @@ body {
 
 .chat-form button {
   font-size: 18px;
-  background: #000;
+  background: #ff003b; /* changed from #000 to #ff003b */
   color: #fff;
   border: none;
   padding: 12px;
@@ -127,7 +127,7 @@ body {
 }
 
 .chat-form button:hover {
-  background: #666666;
+  background: #b80029; /* slightly darker red for hover */
 }
 
 .chat-form button:focus {
@@ -213,6 +213,41 @@ body {
   color: #666;
 }
 
+.product-info .product-brand {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.product-info .view-details-btn {
+  margin-top: 8px;
+  margin-bottom: 0;
+  background: #e3a535;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.product-info .view-details-btn:hover {
+  background: #c48c2c;
+}
+
+.product-info .product-description {
+  font-size: 14px;
+  color: #222;
+  margin-top: 8px;
+  line-height: 1.5;
+  background: #fffbe7;
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid #e3a535;
+  display: none; /* hidden by default, shown when toggled */
+}
+
 /* selected products */
 .selected-products {
   margin: 40px 0;
@@ -239,7 +274,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #fff;
-  background: #000;
+  background: #e3a535; /* changed from #000 to #e3a535 */
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -247,9 +282,124 @@ body {
 }
 
 .generate-btn:hover {
-  background: #666;
+  background: #c48c2c; /* slightly darker shade for hover */
 }
 
 .generate-btn i {
   margin-right: 8px;
+}
+
+.product-card.selected {
+  border: 2px solid #e3a535; /* Gold border for selected */
+  background: #fffbe7; /* Light gold background */
+  box-shadow: 0 0 0 2px #e3a53533; /* Subtle gold glow */
+}
+
+/* Optional: smaller style for selected list */
+.product-card.mini {
+  flex: 0 1 180px;
+  min-height: 80px;
+  padding: 8px;
+  gap: 8px;
+  position: relative;
+}
+
+.product-card.mini img {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.product-card.mini .remove-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: #ff003b;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 20px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.product-card.mini .remove-btn:hover {
+  background: #b80029;
+}
+
+/* Modal styles for product details */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(34, 34, 34, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px 24px 24px 24px;
+  max-width: 350px;
+  width: 90vw;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  position: relative;
+  text-align: center;
+}
+
+.modal-img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.modal-content h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.modal-content .product-brand {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.modal-description {
+  font-size: 15px;
+  color: #222;
+  background: #fffbe7;
+  border-radius: 4px;
+  padding: 14px;
+  border: 1px solid #e3a535;
+  text-align: left;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.modal-close:hover {
+  color: #ff003b;
 }

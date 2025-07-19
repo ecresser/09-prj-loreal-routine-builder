@@ -2,26 +2,26 @@
   "products": [
     {
       "id": 1,
+      "name": "Foaming Gel Cleanser",
       "brand": "CeraVe",
-      "name": "Foaming Facial Cleanser",
       "category": "cleanser",
-      "image": "https://cdn.jsdelivr.net/gh/GCA-Classroom/09-loreal-images/img/CeraVe_Foaming_Facial_Cleanser.png",
+      "image": "https://cdn.jsdelivr.net/gh/GCA-Classroom/09-loreal-images/img/CeraVe_Foaming_Gel_Cleanser.jpg",
       "description": "Gentle gel cleanser with ceramides, hyaluronic acid, and niacinamide. Deeply cleanses normal to oily skin, removing oil, dirt, and makeup without harming the barrier. Foaming, fragrance-free, non-comedogenic; leaves skin feeling refreshed and non-tight. Suitable for normal to oily and acne-prone skin."
     },
     {
       "id": 2,
+      "name": "Hydrating Cleanser",
       "brand": "CeraVe",
-      "name": "Hydrating Facial Cleanser",
       "category": "cleanser",
-      "image": "https://cdn.jsdelivr.net/gh/GCA-Classroom/09-loreal-images/img/CeraVe_Hydrating_Facial_Cleanser.png",
+      "image": "https://cdn.jsdelivr.net/gh/GCA-Classroom/09-loreal-images/img/CeraVe_Hydrating_Cleanser.jpg",
       "description": "Lotion-like, non-foaming cleanser for normal to dry skin. Ceramides and hyaluronic acid restore the barrier and lock in moisture. Gently removes impurities and makeup without stripping essential hydration. Fragrance-free, non-irritating, National Eczema Association approved; ideal for sensitive or dry skin."
     },
     {
       "id": 3,
-      "brand": "CeraVe",
       "name": "Moisturizing Cream",
+      "brand": "CeraVe",
       "category": "moisturizer",
-      "image": "https://cdn.jsdelivr.net/gh/GCA-Classroom/09-loreal-images/img/CeraVe_Moisturizing_Cream.png",
+      "image": "https://cdn.jsdelivr.net/gh/GCA-Classroom/09-loreal-images/img/CeraVe_Moisturizing_Cream.jpg",
       "description": "Rich, velvety cream for face and body with 24-hour hydration for dry to very dry skin. Three ceramides plus MVE Technology release moisture continuously and restore the barrier. Hyaluronic acid locks in hydration. Fragrance-free, non-comedogenic; leaves skin smooth, soft, and protected."
     },
     {
